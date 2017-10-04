@@ -13,7 +13,8 @@ int main(){
    student* enrolled;
    input >> a;
    enrolled = new student[a];
-
+   set_enrolled(enrolled, a, input);
+   check_id(enrolled, a);
    /*for(int i = 0; i < a; i++){
       	input >> str;
 	enrolled[i].set_fname(str);
@@ -27,7 +28,10 @@ int main(){
 	enrolled[i].set_completedcredits(z);
    	enrolled[i].set_standing();
    }*/
-   set_enrolled(enrolled, a, input);
+  /* for(int i = 0; i < a; i++){
+	enrolled[i].display_all();
+   }*/
+   
    delete [] enrolled;
    return 0;
 

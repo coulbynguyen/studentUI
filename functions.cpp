@@ -23,3 +23,15 @@ void set_enrolled(student* enrolled, int a, fstream &input){
 
 
 }
+
+void check_id(student* enrolled, int a){
+   	int num;
+	cout << "ENTER YOUR ID" << endl;
+	cin >> num;
+   	for(int i = 0; i < a; i++){
+		if(enrolled[i].get_id() == num){
+			cout << "welcome: " << enrolled[i].get_fname() << " " << enrolled[i].get_lname() << endl;
+		}
+	}
+
+}

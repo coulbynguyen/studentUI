@@ -1,5 +1,5 @@
 #include <string>
-
+#include <iostream>
 using namespace std;
 
 #ifndef STUDENT_HPP
@@ -26,6 +26,7 @@ class student{
 	   void set_completedcredits(int);
 	   int get_standing();
 	   void set_standing();
+	   void display_all();
 
 
 

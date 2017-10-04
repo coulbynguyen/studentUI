@@ -56,3 +56,7 @@ int student::get_standing(){
 void student::set_standing(){
 	standing = (completedcredits%45)+1;
 }
+
+void student::display_all(){
+	cout << fname << " " << lname << " " << id << " " << gpa << " " << completedcredits << " " << standing << endl;
+}
