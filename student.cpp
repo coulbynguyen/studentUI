@@ -10,49 +10,49 @@ student::student(){
 }
 
 string student::get_fname(){
-
+	return fname;
 }
 
 void student::set_fname(string s){
-
+	fname = s;
 }
 
 string student::get_lname(){
-
+	return lname;
 }
 
 void student::set_lname(string s){
-
+	lname = s;
 }
 
 int student::get_id(){
-
+	return id;
 }
 
 void student::set_id(int num){
-
+	id = num;
 }
 
 float student::get_gpa(){
-
+	return gpa;
 }
 
 void student::set_gpa(float num){
-
+	gpa = num;
 }
 
 int student::get_completedcredits(){
-
+	return completedcredits;
 }
 
 void student::set_completedcredits(int num){
-
+	completedcredits = num;
 }
 
 int student::get_standing(){
-
+	return standing;
 }
 
 void student::set_standing(){
-
+	standing = (completedcredits%45)+1;
 }
