@@ -24,14 +24,24 @@ void set_enrolled(student* enrolled, int a, fstream &input){
 
 }
 
-void check_id(student* enrolled, int a){
+int check_id(student* enrolled, int a){
    	int num;
 	cout << "ENTER YOUR ID" << endl;
 	cin >> num;
    	for(int i = 0; i < a; i++){
 		if(enrolled[i].get_id() == num){
 			cout << "welcome: " << enrolled[i].get_fname() << " " << enrolled[i].get_lname() << endl;
+			return i;
 		}
 	}
 
+}
+
+void menu(int id, student* enrolled, int a){
+	cout << "STUDENT OPTIONS:" << endl;
+	cout << "ENTER 0: To Display All Your Information" << endl;
+	cout << "ENTER 1: To Display Your Class Standing and GPA" << endl;
+	cout << "ENTER 2: To Add Credits and update GPA" << endl;
+	cout << "ENTER 3: To Predict What Your GPA will be with unfinalized grades" << endl;
+	cout << "ENTER 4: To Change Your Name" << endl;
 }
