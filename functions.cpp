@@ -20,7 +20,7 @@ void set_enrolled(student* enrolled, int a, fstream &input){
 	enrolled[i].set_completedcredits(z);
 	enrolled[i].set_standing();
    }
-
+   input.close();
 
 }
 
@@ -38,10 +38,25 @@ int check_id(student* enrolled, int a){
 }
 
 void menu(int id, student* enrolled, int a){
+   	int num;
 	cout << "STUDENT OPTIONS:" << endl;
 	cout << "ENTER 0: To Display All Your Information" << endl;
 	cout << "ENTER 1: To Display Your Class Standing and GPA" << endl;
 	cout << "ENTER 2: To Add Credits and update GPA" << endl;
 	cout << "ENTER 3: To Predict What Your GPA will be with unfinalized grades" << endl;
 	cout << "ENTER 4: To Change Your Name" << endl;
+	cin >> num;
+	if(num == 0){}
+	   //call display all
+	else if(num == 1){}
+	   //call display class standing and GPA
+	else if(num == 2){}
+	   //call appendgpa
+	else if(num == 3){}
+	   //call checkgpa
+	else if(num == 4){}
+	   //call change name
+	else
+	   cout << "YOU HAVE ENTERED AN INCORRECT OPTION" << endl;
+
 }
