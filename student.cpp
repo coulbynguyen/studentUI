@@ -58,5 +58,5 @@ void student::set_standing(){
 }
 
 void student::display_all(){
-	cout << fname << " " << lname << " " << id << " " << gpa << " " << completedcredits << " " << standing << endl;
+	cout << "NAME:" << fname << " " << lname << " ID:" << id << " GPA:" << gpa << " COMPLETED CREDITS:" << completedcredits << " STANDING:" << standing << endl;
 }
